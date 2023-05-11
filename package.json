@@ -7,7 +7,7 @@
     "lint-fix": "eslint --fix .",
     "lint": "eslint .",
     "prepare": "husky install",
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
