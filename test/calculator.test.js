@@ -23,7 +23,7 @@ describe('Calculator', function () {
 
   describe('remove', function () {
     it('should return 1 if 2 - 1', function () {
-      assert.equal(this.calc.remove(2, 1), 1);
+      assert.equal(this.calc.subtract(2, 1), 1);
     });
   });
 
