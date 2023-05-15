@@ -12,7 +12,7 @@ class Calculator {
     return this.result;
   }
 
-  remove(x, y) {
+  subtract(x, y) {
     this.result = x - y;
     return this.result;
   }
