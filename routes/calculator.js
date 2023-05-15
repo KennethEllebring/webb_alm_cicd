@@ -4,8 +4,20 @@ const Calculator = require('../controllers/calculator');
 
 const router = express.Router();
 
-router.get('/', Calculator, (req, res, next) => {
-  res.send('Add calculator');
+const myCalc = new Calculator();
 
-  module.exports = router;
+router.get('/', (req, res, next) => {
+  const x = Number(req.query.valOne);
+  const y = Number(req.query.valTwo);
+
+  res.render('calculator', {
+    val1: x,
+    val2: y,
+    add: myCalc.add(x, y),
+    subtract: myCalc.subtract(x, y),
+    multiply: myCalc.multiply(x, y),
+    divide: myCalc.divide(x, y),
+  });
 });
+
+module.exports = router;
