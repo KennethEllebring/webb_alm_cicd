@@ -1,4 +1,4 @@
-name: pipeline
+name: First Workflow
 
 on:
   push:
@@ -8,16 +8,22 @@ on:
 jobs:
   echo_branch:
     runs-on: ubuntu-latest
-    
-    steps:       
-      - name: First pipe
-        run: "echo Branch: main"
-  
-  test:
+
+    steps:
+      - name: First step
+        run: 'echo Branch: main'
+
+  check_unit_test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: install npm
-        run: "npm install"
-      - name: run user_test
-        run: "npm run test"
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: Installs Packets
+        run: 'npm i'
+
+      - name: Runs Unit Test
+        run: 'npm run test'
