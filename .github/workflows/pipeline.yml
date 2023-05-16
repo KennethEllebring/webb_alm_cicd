@@ -27,3 +27,6 @@ jobs:
 
       - name: Runs Unit Test
         run: 'npm run test'
+
+      - name: Runs eslint
+        run: 'npm run lint'
