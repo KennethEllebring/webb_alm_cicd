@@ -25,7 +25,7 @@ jobs:
       - name: Installs Packets
         run: 'npm i'
 
-      - name: Runs Unit Test
+      - name: Runs Unit Test and supertest
         run: 'npm run test'
 
       - name: Runs eslint
