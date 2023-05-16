@@ -17,5 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: unit test
+      - name: install npm
+        run: "npm install"
+      - name: run user_test
         run: "npm run test"
