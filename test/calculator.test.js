@@ -47,4 +47,13 @@ describe('Calculator', function () {
       assert.equal(this.calc.divide(10, 0), Infinity);
     });
   });
+
+  describe('power', function () {
+    it('should return 4 if 2 ** 2', function () {
+      assert.equal(this.calc.power(2, 2), 4);
+    });
+    it('should return 3125 if 5 ** 5', function () {
+      assert.equal(this.calc.power(5, 5), 3125);
+    });
+  });
 });

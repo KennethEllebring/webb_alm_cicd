@@ -26,6 +26,11 @@ class Calculator {
     this.result = x / y;
     return this.result;
   }
+
+  power(x, y) {
+    this.result = x ** y;
+    return this.result;
+  }
 }
 
 module.exports = Calculator;
