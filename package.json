@@ -7,7 +7,7 @@
     "lint-fix": "eslint --fix .",
     "lint": "eslint .",
     "prepare": "husky install",
-    "test": "nyc mocha --recursive --reporter mocha-junit-reporter",
+    "test": "nyc mocha --recursive --reporter json > test-result.json",
     "supertest": "supertest",
     "autoform": "npx prettier --write ."
   },
