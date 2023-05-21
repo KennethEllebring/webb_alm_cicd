@@ -13,7 +13,7 @@ describe('Greeter', function () {
   });
   describe('username', function () {
     it('should return "Hello friend"', function () {
-      assert.equal(this.greet.greet('friend'), 'Hello friend');
+      assert.equal(this.greet.greet('frien'), 'Hello friend');
     });
     it('should return "Hello kenneth"', function () {
       assert.equal(this.greet.greet('kenneth'), 'Hello kenneth');
