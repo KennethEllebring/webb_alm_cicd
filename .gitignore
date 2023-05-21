@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # mocha testreporter
-test-result.json
+test-results.xml
