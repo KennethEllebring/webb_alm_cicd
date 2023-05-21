@@ -17,6 +17,7 @@ router.get('/', (req, res, next) => {
     subtract: myCalc.subtract(x, y),
     multiply: myCalc.multiply(x, y),
     divide: myCalc.divide(x, y),
+    power: myCalc.power(x, y),
   });
 });
 
