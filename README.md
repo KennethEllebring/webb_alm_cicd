@@ -29,7 +29,6 @@ git commit -m "Keep calm and commit"
 # `npm test` will run
 ```
 
-
 [ci-image]: https://github.com/kennethellebring/webb_alm_cicd/workflows/Tests/badge.svg
 [ci-url]: https://github.com/kennethellebring/webb_alm_cicd/actions?workflow=Tests
 
