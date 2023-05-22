@@ -1,5 +1,9 @@
 # Welcome to the project
 
+## node-coveralls
+
+[![Build Status][ci-image]][ci-url] [![Coverage Status][coveralls-image]][coveralls-url]
+
 ## Husky
 
 ```sh
@@ -25,4 +29,9 @@ git commit -m "Keep calm and commit"
 # `npm test` will run
 ```
 
-For more information go to: https://typicode.github.io/husky/
+
+[ci-image]: https://github.com/kennethellebring/webb_alm_cicd/workflows/Tests/badge.svg
+[ci-url]: https://github.com/kennethellebring/webb_alm_cicd/actions?workflow=Tests
+
+[coveralls-image]: https://coveralls.io/repos/github/KennethEllebring/webb_alm_cicd/badge.svg?branch=main
+[coveralls-url]: https://coveralls.io/github/KennethEllebring/webb_alm_cicd?branch=main
