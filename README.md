@@ -1,6 +1,6 @@
 # Welcome to the project
 
-## node-coveralls
+## Mocha/nyc/Coverall
 
 [![Build Status][ci-image]][ci-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
