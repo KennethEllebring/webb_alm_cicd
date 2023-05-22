@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.ref != 'refs/heads/main' }}
     steps:
+      - name: changing NODE_ENV to dev 
+        run: "set NODE_ENV=development"
+
       - name: Print Deploy Message
         run: "echo now deploying branch: ${{ github.ref }} to the test server"
 
@@ -15,5 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' }}
     steps:
+      - name: changing NODE_ENV to dev 
+        run: "set NODE_ENV=production"
+      
       - name: Print Deploy Message
         run: "echo now deploying to production"
