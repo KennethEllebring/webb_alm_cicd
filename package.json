@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "test": "nyc mocha --grep 'test'",
-    "contain_test": "mocha --grep 'container'",
+    "ctest": "mocha --grep 'container'",
     "autoform": "npx prettier --write ."
   },
   "dependencies": {
