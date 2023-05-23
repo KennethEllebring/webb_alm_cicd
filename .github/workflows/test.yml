@@ -26,8 +26,15 @@ jobs:
       - name: Install npm dependencies
         run: npm i
         
-      - name: Run tests
-        run: npm run test
+      - name: Run tests with coverage
+        run: | 
+          npm run test
+          COVERAGE_PERCENTAGE=$(nyc report --reporter=lcov | npx coveralls)
+          echo "Coverage Percentage: $COVERAGE_PERCENTAGE"
+          if (( $(echo "$COVERAGE_PERCENTAGE < 80" | bc -l) )); then
+            echo "Coverage is too low. Cancelling the pipeline."
+            exit 1
+          fi
 
       - name: Coveralls
         uses: coverallsapp/github-action@main
