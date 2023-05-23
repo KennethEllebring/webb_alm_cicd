@@ -3,6 +3,8 @@
   "report-dir": "coverage",
   "temp-dir": ".nyc_output",
   "all": true,
+  "check-coverage": true,
+  "exclude": ["test/**", "coverage/**", "commitlint.config.js"],
   "stmts": 80,
   "branch": 80,
   "funcs": 80,

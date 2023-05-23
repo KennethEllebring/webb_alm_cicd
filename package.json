@@ -32,5 +32,19 @@
     "nyc": "^15.1.0",
     "prettier": "^2.8.8",
     "supertest": "^6.3.3"
+  },
+  "nyc": {
+    "exclude": [
+      "test/**",
+      "coverage/**"
+    ],
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "extension": [
+      ".js",
+      ".jsx"
+    ]
   }
 }
