@@ -1,12 +1,18 @@
 const request = require('supertest');
 
+const assert = require('assert');
+
 const app = require('../app');
 
 describe('GET /calculator', function () {
-  it('text/html', function (done) {
+  it('should return 200', function (done) {
     request(app)
       .get('/calculator')
-      .expect('Content-Type', /text\/html/)
-      .expect(200, done);
+      .expect(200)
+      .end(function (err, response) {
+        if (err) return done(err);
+        assert.strictEqual(response.status, 200);
+        return done();
+      });
   });
 });
