@@ -2,7 +2,7 @@
 
 ## Mocha/nyc/Coverall
 
-[![Build Status][ci-image]][ci-url] [![Coverage Status](https://coveralls.io/repos/github/KennethEllebring/webb_alm_cicd/badge.svg?branch=main)](https://coveralls.io/github/KennethEllebring/webb_alm_cicd?branch=main)
+[![Build Status][ci-image]][ci-url] [![Coverage Status](https://coveralls.io/repos/github/KennethEllebring/webb_alm_cicd/badge.svg?branch=main&service=github)](https://coveralls.io/github/KennethEllebring/webb_alm_cicd?branch=main)
 
 ## Husky
 
