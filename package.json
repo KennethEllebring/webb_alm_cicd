@@ -7,7 +7,8 @@
     "lint-fix": "eslint --fix .",
     "lint": "eslint .",
     "prepare": "husky install",
-    "test": "nyc mocha",
+    "test": "nyc mocha --grep 'test'",
+    "contain_test": "mocha --grep 'container'",
     "autoform": "npx prettier --write ."
   },
   "dependencies": {
@@ -32,6 +33,12 @@
     "prettier": "^2.8.8",
     "supertest": "^6.3.3"
   },
+  "test": {
+    "exclude": [
+      "./test/container.test.js"
+    ]
+  },
+
   "nyc": {
     "exclude": [
       "test/**",

@@ -2,7 +2,7 @@ const assert = require('assert');
 
 const Calculator = require('../controllers/calculator');
 
-describe('Calculator', function () {
+describe('Calculator test', function () {
   beforeEach(function () {
     this.calc = new Calculator();
   });

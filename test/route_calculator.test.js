@@ -4,7 +4,7 @@ const assert = require('assert');
 
 const app = require('../app');
 
-describe('GET /calculator', function () {
+describe('GET /calculator test', function () {
   it('should return 200', function (done) {
     request(app)
       .get('/calculator')

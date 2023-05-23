@@ -4,7 +4,7 @@ const assert = require('assert');
 
 const app = require('../app');
 
-describe('Error handling middleware', function () {
+describe('Error handling middleware test', function () {
   it('should generate a 404 error', function (done) {
     request(app)
       .get('/no-route')

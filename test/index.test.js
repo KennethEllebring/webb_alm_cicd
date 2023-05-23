@@ -2,7 +2,7 @@ const request = require('supertest');
 
 const app = require('../app');
 
-describe('GET /', function () {
+describe('GET / test', function () {
   it('should return text/html', function (done) {
     request(app)
       .get('/')
