@@ -1,6 +1,6 @@
 const request = require('supertest');
 
-describe('Supertest against remote container', function () {
+describe('Check against remote container', function () {
   it('hello nginx', function () {
     return request('http://localhost:8080')
       .get('/')
