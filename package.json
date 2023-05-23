@@ -8,7 +8,6 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "test": "nyc mocha",
-    "supertest": "supertest",
     "autoform": "npx prettier --write ."
   },
   "dependencies": {
