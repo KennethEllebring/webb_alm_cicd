@@ -15,7 +15,5 @@ RUN npm install
 # Bundle app source, but its better to copy the specific folder and files needed
 COPY . .
 
-# Set NODE_ENV
-ENV NODE_ENV production
 EXPOSE 3000
 CMD [ "npm", "start" ]

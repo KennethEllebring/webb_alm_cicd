@@ -22,5 +22,5 @@ jobs:
         run: "set NODE_ENV=production"
       
       - name: Print Deploy Message
-        run: "echo now deploying to production, ${{ steps.meta.outputs.tags }}"
+        run: "echo now deploying to production, ${{ github.ref }}"
 
