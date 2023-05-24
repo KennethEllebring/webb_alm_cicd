@@ -4,11 +4,24 @@
 
 [![Build Status][ci-image]][ci-url] [![Coverage Status](https://coveralls.io/repos/github/KennethEllebring/webb_alm_cicd/badge.svg?branch=main&service=github)](https://coveralls.io/github/KennethEllebring/webb_alm_cicd?branch=main)
 
-## Husky
+## Start/run/test project
+
+Install all dependencies:
 
 ```sh
-npm install husky --save-dev
+npm i
 ```
+
+Start project:
+```sh
+npm run start
+```
+
+test project:
+```
+npm run test
+```
+## Config for Husky
 
 Edit package.json > prepare script and run it once:
 ```sh
