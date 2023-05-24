@@ -12,7 +12,7 @@ jobs:
         run: "set NODE_ENV=development"
 
       - name: Print Deploy Message
-        run: "echo now deploying branch: ${{ github.ref }} to the test server"
+        run: "echo now deploying branch: ${{ github.repository }} to the test server"
 
   deploy_production:
     runs-on: ubuntu-latest
@@ -22,5 +22,5 @@ jobs:
         run: "set NODE_ENV=production"
       
       - name: Print Deploy Message
-        run: "echo now deploying to production, ${{ github.ref }}"
+        run: "echo now deploying to production, ${{ github.repository }}"
 
